@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Control - Dashboard</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-blue-600 text-white p-4">
+            <h1 class="text-2xl font-bold">Welcome to Your Health Dashboard</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Health Information Card -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Health Information</h2>
+                    <p class="text-gray-600">Manage your health metrics and track your progress.</p>
+                    <a href="health_info.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">Go to Health Info</a>
+                </div>
+
+                <!-- Appointments Card -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Appointments</h2>
+                    <p class="text-gray-600">Schedule and manage your appointments easily.</p>
+                    <a href="appointments.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">View Appointments</a>
+                </div>
+
+                <!-- Stress Quiz Card -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h2 class="text-xl font-semibold mb-4">Stress Assessment</h2>
+                    <p class="text-gray-600">Take a quick quiz to assess your stress levels.</p>
+                    <a href="stress_quiz.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">Start Quiz</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-200 text-center p-4">
+            <p class="text-gray-600">© 2023 Health Control. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
