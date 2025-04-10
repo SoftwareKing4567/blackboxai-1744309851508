@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Control - Health Information</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="dashboard.html" class="text-xl font-bold flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back to Dashboard
+            </a>
+            <h1 class="text-2xl font-bold">Health Information</h1>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <form class="max-w-4xl mx-auto">
+            <!-- Basic Measurements Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4 text-blue-600">
+                    <i class="fas fa-weight mr-2"></i>
+                    Basic Measurements
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="weight">
+                            Weight (kg)
+                        </label>
+                        <input type="number" id="weight" step="0.1"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your weight">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="height">
+                            Height (cm)
+                        </label>
+                        <input type="number" id="height"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter your height">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vital Signs Section -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4 text-blue-600">
+                    <i class="fas fa-heartbeat mr-2"></i>
+                    Vital Signs
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="blood-pressure">
+                            Blood Pressure (mmHg)
+                        </label>
+                        <div class="flex gap-2">
+                            <input type="number" id="systolic" placeholder="Systolic"
+                                class="w-1/2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <input type="number" id="diastolic" placeholder="Diastolic"
+                                class="w-1/2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="heart-rate">
+                            Heart Rate (bpm)
+                        </label>
+                        <input type="number" id="heart-rate"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter heart rate">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="temperature">
+                            Body Temperature (°C)
+                        </label>
+                        <input type="number" id="temperature" step="0.1"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter body temperature">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="blood-sugar">
+                            Blood Sugar (mg/dL)
+                        </label>
+                        <input type="number" id="blood-sugar"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Enter blood sugar level">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Health Information -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h2 class="text-xl font-semibold mb-4 text-blue-600">
+                    <i class="fas fa-notes-medical mr-2"></i>
+                    Additional Information
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="allergies">
+                            Allergies
+                        </label>
+                        <textarea id="allergies" rows="3"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="List any allergies"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="medications">
+                            Current Medications
+                        </label>
+                        <textarea id="medications" rows="3"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="List current medications"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-semibold mb-2" for="notes">
+                            Additional Notes
+                        </label>
+                        <textarea id="notes" rows="3"
+                            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="Any additional health notes"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-end">
+                <button type="submit" 
+                    class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-200 flex items-center">
+                    <i class="fas fa-save mr-2"></i>
+                    Save Health Information
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-center p-4 mt-8">
+        <p class="text-gray-600">© 2023 Health Control. All rights reserved.</p>
+    </footer>
+</body>
+</html>
